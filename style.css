@@ -1,0 +1,10 @@
+#clock, #date {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  font-family: 'Shizuru', cursive;
+}
+
+body {
+  background-image: linear-gradient(to right, #db9ef7 , #9746bd);
+}
