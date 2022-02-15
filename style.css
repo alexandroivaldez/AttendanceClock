@@ -1,5 +1,4 @@
-#clock,
-#date {
+#clock, #date {
   text-align: center;
   font-size: 175px;
   color: white;
@@ -7,7 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(to rsight, #db9ef7, #9746bd);
+  background-image: linear-gradient(to right, #db9ef7, #9746bd);
 }
 
 #info {
