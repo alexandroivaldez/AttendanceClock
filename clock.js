@@ -17,7 +17,7 @@ function currentTime() {
    mm = (mm < 10) ? "0" + mm : mm;
    ss = (ss < 10) ? "0" + ss : ss;
     
-   let time = hh + ":" + mm + ":" + ss + " " + session;
+   let time = hh + ":" + mm + " " + session;
 
   document.getElementById("clock").innerText = time; 
   let t = setTimeout(function(){ currentTime() }, 1000);
@@ -25,6 +25,20 @@ function currentTime() {
 
 currentTime();
 
-var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+var today = new Date();
+var dd = today.getDate();
 
-document.getElementById("date").innerText = utc; 
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+}
+
+today = mm+'/'+dd+'/'+yyyy;
+ document.getElementById("date").innerText = today;
